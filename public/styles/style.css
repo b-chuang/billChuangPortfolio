@@ -129,7 +129,8 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  border: 1px solid green; }
 
 .visuallyhidden:not(:focus):not(:active) {
   position: absolute;
@@ -143,9 +144,31 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   clip: rect(0 0 0);
   overflow: hidden; }
 
+.flexContainer {
+  display: flex; }
+
+.flexItem {
+  flex-direction: row;
+  height: 100vh; }
+
+.flexItemFixed {
+  width: 27%;
+  position: relative; }
+
+.flexItemContent {
+  padding: 20px;
+  width: 85%; }
+
+.navBar {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  width: 24%; }
+
 * {
-  margin: 0;
-  padding: 0; }
+  /*   margin: 0;
+    padding: 0; */
+  border: 1px solid green; }
 
 img {
   max-width: 100%; }

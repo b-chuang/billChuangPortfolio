@@ -1,5 +1,34 @@
-@import "partials/setup.scss";
-@import "partials/general.scss";
-@import "partials/header.scss";
-@import "partials/main.scss";
-@import "partials/footer.scss";
+@import "partials/_setup.scss";
+@import "partials/_utils.scss";
+@import "partials/_header.scss";
+@import "partials/_main.scss";
+@import "partials/_footer.scss";
+
+* {
+  /*   margin: 0;
+    padding: 0; */
+    border:1px solid green;
+}
+
+img{
+    max-width: 100%;
+}
+
+html{
+	font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    min-height: 100vh;  
+}
+
+.wrapper{
+    max-width: 1080px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.hide{
+    display: none;
+}
