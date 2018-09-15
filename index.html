@@ -3,12 +3,11 @@
 <head>
   <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>BILLC.tech</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800|Raleway:400,700,800" rel="stylesheet">
-	
-	<link type="image/png" href="" rel="icon">
+    <title>BILLC.tech</title>
+    <link type="image/png" rel="icon" href="/assets/bcLogoW2.png">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,700|Karla:400,700" rel="stylesheet">
 	<link rel="stylesheet" href="/public/styles/style.css">
 </head>
 <body>
@@ -25,7 +24,7 @@
                         <!-- LOGO START TRYINA-->
                         <nav class="navBar__logo">
                             <div class="logoHolder">
-                                <a href="#"><img src="assets/logo1.png" alt="B logo"></a>
+                                <a href="#"><img src="/assets/bcLogo1.svg" alt="B logo"></a>
                             </div>
                         </nav>
                         <!-- LOGO END -->
@@ -59,21 +58,21 @@
                         
                         <!-- NAV FOOTER START -->
                         <nav class="navFooter">
-                            <div class="navFooter__email">
+                            <!-- <div class="navFooter__email">
                                 <h4>bill@billchuang.tech</h4>
-                            </div>
+                            </div> -->
                             <div class="navFooter__socialLinks">
-                                <a href="https://www.facebook.com/" target="_blank" class="navFooter__socialLinks__item">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
                                 <a href="https://twitter.com/" target="_blank" class="navFooter__socialLinks__item">
                                     <i class="fab fa-twitter"></i>
                                 </a>
-                                <a href="https://dribbble.com/" target="_blank" class="navFooter__socialLinks__item">
-                                    <i class="fab fa-dribbble"></i>
+                                <a href="https://github.com/b-chuang" target="_blank" class="navFooter__socialLinks__item">
+                                    <i class="fab fa-github"></i>
                                 </a>
-                                <a href="https://plus.google.com" target="_blank" class="navFooter__socialLinks__item">
-                                    <i class="fab fa-google-plus-g"></i>
+                                <a href="https://www.linkedin.com/in/bill-c-55a8a9158/" target="_blank" class="navFooter__socialLinks__item">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="mailto:bill@billc.tech" class="navFooter__socialLinks__item">
+                                    <i class="fas fa-envelope"></i>
                                 </a>
                             <div>
 
@@ -92,44 +91,37 @@
         <div class="flexItemContent">
             <!-- MAIN START -->
             <main>
-                <!-- PARTICLE JS-->
-                <div id="particles-js">
-                    <div class="brushStrokeWrapper">
-
-                    <!-- HEADER CONTENT -->
-                    <div id="home" class="headerContent">
-                        <h3 class="headerContent__hello">&lt;Hello World/&gt;</h3>
-                        <h1 class="headerContent__title">Bill CHUANG </h1>
-
-                        <div class="headerContent__leadLine"></div>
+                <!-- PARTICLE JS -->
+                <div class="particleWrapper">
+                
+                    <div id="particles-js">
+                        <!-- HEADER CONTENT -->
+                        <div id="home" class="headerContent">
                         
-                        <h2 class="headerContent__subHeading">Front-end web developer</h2>
-
-                        <div class="headerContent__socialIcons">
-                            <ul>
-                                <li class="headerContent__socialIcon"><i class="fab fa-twitter"></i>＿＿</li>
-                                <li class="headerContent__socialIcon"><i class="fab fa-github"></i>＿＿</li>
-                                <li class="headerContent__socialIcon"><i class="fab fa-linkedin-in"></i>＿＿</li>
-                                <li class="headerContent__socialIcon"><i class="fas fa-envelope"></i></li>
-                            </ul>
-                        </div>
-
-                        <a href="#about"><button class="button button--hover buttonhov" tabindex="6">See my work</button></a>
                         
-                        <!-- <div class="brushStroke">
-                            <div class="brush"></div>
-                            <div class="brush2"></div>
-                        </div> -->
+                            <div class="headerContentWrapper">
+                                <h3 class="headerContent__hello">&lt;Hello World/&gt;</h3>
+                                <h1 class="headerContent__title">Bill Chuang</h1>
+
+                                <div class="headerContent__leadLine"></div>
+                                
+                                <h2 class="headerContent__subHeading">Front-end web developer</h2>
+
+                                <div class="headerContent__socialIcons">
+                                    <ul>
+                                        <li class="headerContent__socialIcon"><i class="fab fa-twitter"></i>＿＿</li>
+                                        <li class="headerContent__socialIcon"><i class="fab fa-github"></i>＿＿</li>
+                                        <li class="headerContent__socialIcon"><i class="fab fa-linkedin-in"></i>＿＿</li>
+                                        <li class="headerContent__socialIcon"><i class="fas fa-envelope"></i></li>
+                                    </ul>
+                                </div>
+
+                                <a href="#about"><button class="button button--hover buttonhov" tabindex="6">See my work</button></a>
+                            </div>
                         </div>
                     </div>
-
-                    
                 </div>
-                
-                
-                
-
-
+            
                 <!-- ABOUT US SECTION START -->
                 <section class="about">
                     <div class="wrapper">
@@ -254,7 +246,22 @@
     </script>
 	<!-- JQUERY SCRIPT END -->
 	
-	<!-- SCRIPTS -->
+    <!-- SCRIPTS -->
+    <script>jQuery(document).ready(function ($) {
+            // Get page title
+            var pageTitle = $("title").text();
+
+            // Change page title on blur
+            $(window).blur(function () {
+                $("title").text("👋, 👇, come back soon");
+            });
+
+            // Change page title back on focus
+            $(window).focus(function () {
+                $("title").text(pageTitle);
+            });
+        });</script>
+
 	<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB"
 	 crossorigin="anonymous"></script>
 	
