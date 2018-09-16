@@ -1,13 +1,22 @@
 
 #particles-js {
     height:95vh;
+    // position: relative;
+    // background: 
+    //     /* url(../../../assets/me1.jpeg) no-repeat,  */
+    //     url(../../../assets/brushStroke.png) no-repeat,
+    //     url(../../../assets/brushStroke2.png) no-repeat, #E6F7EC;
+    //     background-size: 600px;
+}
+
+.particleWrapper {
+    height: 95vh;
     position: relative;
     background: 
         /* url(../../../assets/me1.jpeg) no-repeat,  */
         url(../../../assets/brushStroke.png) no-repeat,
         url(../../../assets/brushStroke2.png) no-repeat, #E6F7EC;
         background-size: 600px;
-        
 }
 
 canvas.particles-js-canvas-el {
