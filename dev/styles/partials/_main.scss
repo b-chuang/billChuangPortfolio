@@ -68,14 +68,23 @@
     background: #E2F9EC;
 }
 
-.portfolio__title__leadLine {
-    height: 3px;
-    width: 35px;
-    content: "";
-    position: absolute;
-    background-color:  #898f98;
-    margin-top:10.5%;
+.portfolio__title {
+    margin-left: 5%;
+    &__leadLine {
+        height: 3px;
+        width: 35px;
+        content: "";
+        position: absolute;
+        background-color:  #898f98;
+        margin-top:10%;
+    }
+    &__sub {
+        margin-top:0px;
+    }
+}
 
+h4.portfolio__title {
+    margin-left:0;
 }
 
 .portfolio__container {
@@ -145,11 +154,22 @@
 
 
 //SKILLS SECTION START
-
 .skills__section {
     background: #E2F9EC;
-    margin-top:2%;
-    padding-bottom:5%;
+    padding-bottom:1%;
+}
+
+.skillsHeading {
+    padding-top:8%;
+    padding-left:5%;
+    &__leadLine {
+        height: 3px;
+        width: 35px;
+        content: "";
+        position: absolute;
+        background-color:  #898f98;
+        margin-top:8.8%;
+    }
 }
 
 .carousel {
@@ -204,6 +224,20 @@
 .blog {
     background: #E2F9EC;
     margin-top:2%;
+    padding-bottom:6%;
+}
+
+.blog__heading {
+    padding-top:6%;
+    padding-left:5%;
+    &__leadLine {
+        height: 3px;
+        width: 35px;
+        content: "";
+        position: absolute;
+        background-color:  #898f98;
+        margin-top:5.8%;
+    }
 }
 
 .blog__parent {
@@ -223,19 +257,54 @@
 
 
 // CONTACT SECTION START
-.contact__section {
-    background: #E2F9EC;
-    margin-top:2%;
+.contact {
+    &__leadLine {
+       height: 3px;
+        width: 35px;
+        content: "";
+        position: absolute;
+        background-color:  #898f98;
+        margin-top:8.1%; 
+    }
+    &__section {
+        background: #E2F9EC;
+        margin-top:2%;
+        padding-bottom:5%;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        padding-left:5%;
+        padding-top:5%;
+    }
 }
 
-.contact__content {
-    display: flex;
-    flex-direction: column;
+.contact__content h5 {
+    margin:0;
 }
+
+.contact__content a {
+    font-size:2.2rem;
+    margin: 10px 0;
+}
+
+.social li a {
+    font-size:2.2rem;
+    margin: 10px 0;
+    display:flex;
+    flex-direction:row;
+}
+
+.contact_content h5 {
+    margin-left:5%;
+}
+
+
 // CONTACT SECTION END
 
 // FOOTER START
 footer {
     text-align: center;
+    margin-top: 2%;
 }
 // FOOTER END
