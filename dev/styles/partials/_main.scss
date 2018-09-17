@@ -1,35 +1,241 @@
+/* section {
+    border:1px blue solid;
+} */
 
-.flexContainer {
-    display: flex;
+
+
+// ABOUT SECTION START
+.about__section {
+    margin-top:2%;
+    /* background: #E2F9EC; */
+    height: 95vh;
+    &__me {
+        align-items: center;
+    }
+    &__contents {
+        display:flex;
+        flex-direction:row;
+    }
+
+    
+	background: linear-gradient(360deg, rgba(225,255,255, 0.3), rgba(255,255,255,1)), url(/assets/tobg2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+	background-position: left 122px bottom 0px;
+	background-attachment: fixed;
+	padding-bottom: 160px;
+	position: relative;
+	@include respond-to("medium-large") {
+		background-attachment: scroll;
+	}
 }
 
-.flexItem {
-    flex-direction: row;
-    height: 100vh;   
-}
-
-.flexItemFixed {
-    width:15%;
-    position: relative;
-}
-
-.flexItemContent {
-    padding: 20px;
-    width: 85%;
-}
-
-.navBar {
-    display:flex;
-    flex-direction: column;
-    position: fixed;
-    width:24%;
-    &__logo {
-        width:30%;
-        margin:65px 85px;
+.about__title {
+    &__heading {
+        padding-top: 10%;
+        padding-left:5%;
+        color:#000; /* #898f98; */
+    }
+    &__leadLine {
+        height: 3px;
+        width: 35px;
+        content: "";
+        position: absolute;
+        background-color:  #898f98;
+        margin-top:10.5%;
     }
 }
 
-
-.portfolio {
-    
+.about__imgContainer{
+    margin:0 auto;
+    width:18%;
+    margin-top:8%;
 }
+
+.about__imgContainer img{
+    border-radius: 50%;
+    border: 1px solid darkgrey;
+}
+// ABOUT SECTION END
+
+
+
+
+// PORTFOLIO SECTION START
+
+.portfolio__section {
+    margin-top:2%;
+    background: #E2F9EC;
+}
+
+.portfolio__title__leadLine {
+    height: 3px;
+    width: 35px;
+    content: "";
+    position: absolute;
+    background-color:  #898f98;
+    margin-top:10.5%;
+
+}
+
+.portfolio__container {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	@include respond-to("medium-large") {
+		flex-direction: column;
+		padding: 30px 0px;
+	}
+}
+
+.portfolio__imgContainer {
+	max-width: 50%;
+	@include respond-to("medium-large") {
+		max-width: 90%;
+	}
+}
+.portfolio__img {
+	width: 100%;
+	animation-delay: 0.2s;
+}
+
+.portfolio__container:nth-child(even) {
+	flex-direction: row-reverse;
+	@include respond-to("medium-large") {
+		flex-direction: column;
+	}
+}
+
+.portfolio__contentContainer {
+	padding: 80px 45px	;
+	@include respond-to("medium-large") {
+		padding: 0px 15px;
+		width: 90%;
+	}
+}
+
+.portfolio__buttonContainer {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	& > *{
+		margin: 0px 30px 0px 0px;
+	}
+	@include respond-to("small") {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+}
+
+.portfolio__copy {
+	padding: 0px 0px 30px 0px;
+	margin: 0px;
+}
+
+
+.sectiontitle__container {
+	padding-top: 140px;
+}
+
+.sectiontitle__container--work {
+	padding-top: 80px;
+}
+// PORTFOLIO END
+
+
+//SKILLS SECTION START
+
+.skills__section {
+    background: #E2F9EC;
+    margin-top:2%;
+    padding-bottom:5%;
+}
+
+.carousel {
+	background: #E2F9EC;
+    margin: 45px 0;
+    overflow: hidden;
+}
+
+
+.skillsBanner {
+	position: relative;
+}
+
+
+.skillsBanner .carousel {
+	padding: 0 2%;
+}
+
+
+.wideWrap {
+    width: 100%;
+	margin: 0 auto;
+}
+
+
+.flickity-viewport {
+	height: 100%;
+}
+
+.carousel-cell svg {
+	width: 110px;
+	margin: 40px;
+	path {
+		fill: #000;
+	}
+}
+
+#cssPath__one {
+	fill: #c1bfbf;
+}
+
+#cssPath__two {
+	fill: #FFF;
+}
+
+#cssPath__three, #cssPath__four, #cssPath__five, #cssPath__six, #firebasePath__one, #firebasePath__three {
+	fill: #4c4c4c;
+}
+//SKILLS SECTION END
+
+// BLOG SECTION START
+.blog {
+    background: #E2F9EC;
+    margin-top:2%;
+}
+
+.blog__parent {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.blog__child {
+    flex-direction:row;
+    width:33.33%;
+}
+
+.blog__container {
+    border: 1px solid red;
+}
+// BLOG SECTION END
+
+
+// CONTACT SECTION START
+.contact__section {
+    background: #E2F9EC;
+    margin-top:2%;
+}
+
+.contact__content {
+    display: flex;
+    flex-direction: column;
+}
+// CONTACT SECTION END
+
+// FOOTER START
+footer {
+    text-align: center;
+}
+// FOOTER END

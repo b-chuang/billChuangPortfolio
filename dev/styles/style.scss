@@ -33,7 +33,33 @@ body{
     display: none;
 }
 
-/* a {
-    position:relative;
-    z-index:9999;
-} */
+/* MAIN LAYOUT FLEX */
+
+.flexContainer {
+    display: flex;
+}
+
+.flexItem {
+    flex-direction: row;
+    height: 100vh;   
+}
+
+.flexItemFixed {
+    width:15%;
+    position: relative;
+}
+
+.flexItemContent {
+    padding: 20px;
+    width: 85%;
+}
+.navBar {
+    display:flex;
+    flex-direction: column;
+    position: fixed;
+    width:24%;
+    &__logo {
+        width:30%;
+        margin:65px 85px;
+    }
+}
