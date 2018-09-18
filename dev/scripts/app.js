@@ -23,14 +23,18 @@ particlesJS.load('particles-js', 'assets/particles.json', function () {
             $(window).focus(function () {
                 $("title").text(pageTitle);
             });
+
+            //Smooth scroll 
+            $('a').smoothScroll({ offset: -1, speed: 700 });
+
+
+            //Open close side nav bar            
+            $(".openSideNav").click(function (event) {
+                console.log('hello bill');
+                event.preventDefault();
+
+                $("nav").toggleClass("navBarOpen");
+                $("main").toggleClass("mainSlideOpen")
+            });
         });
-
-        //Smooth scroll 
-        $('a').smoothScroll({ offset: -1, speed: 700 });
-
-        //close slider
-        $(document).ready(function () {
-
-            
-
-        });
+        

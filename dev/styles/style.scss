@@ -78,6 +78,9 @@ p {
     margin-top: 20px;
 }
 
+#main.mainSlideOpen {
+    margin-left: 24%;
+}
 
 
 @media (max-width:1180px){
@@ -87,6 +90,12 @@ p {
         left:-999%;
         transition:margin-left 0.5s;
     }
+
+    .navBarOpen {
+        display: block;
+        left:0%;
+        transition:margin-left 0.5s;
+    }  
 
     .flexItemFixed {
         width:0%;

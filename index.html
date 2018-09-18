@@ -15,7 +15,7 @@
     <div class="flexContainer">
         <!-- HAMBURGER -->
         <span class="openSlide">
-            <a href="#"><i class="fas fa-bars"></i></a> <!-- icon svg goes here -->
+            <a href="#" class="openSideNav"><i class="fas fa-bars"></i></a> <!-- icon svg goes here -->
         </span>
 
         <div class="flexItemFixed">
@@ -95,9 +95,14 @@
             
                 <!-- NAV SIDE END -->
         </div> <!-- flexItemFixed END -->
+
+
+        
         <!-- DROPDOWN NAVBAR START-->
         <div id="sideMenu" class="sideNav">
-            <button class="btn-close">&times;</a>
+            <a src="#" class="btn-close">&times;</a>
+
+
             <nav class="navBar__menu" id="menu">
                 <ul class="navList">
                     <li class="navList__item">
@@ -117,6 +122,7 @@
                     </li>
                 </ul>
             </nav>
+
         </div>
         <!-- DROPDOWN NAVBAR END -->
 
@@ -169,8 +175,8 @@
                                 <div class="about__me">
                                     <!-- <h2>About us blah.</h2> -->
                                     <h3>I'm a Front End Developer based in Toronto with a keen interest for design and problem solving. I believe in creating clean,
-                                    dry web products that have included thought on user experience, beautiful design, accessibility and performance. When I'm
-                                    away from my computer I love to explore.</h3>
+                                    dry code that have included thought on engaging user experience, organised design, accessibility and performance. When I'm
+                                    away from my computer I love to get outdoors and explore anything.</h3>
                                 </div>
                                 <div class="about__imgContainer">
                                     <img src="/assets/headshotBrush.png" alt="Headshot of Bill Chuang">
@@ -204,7 +210,7 @@
                                 </div>
                                 <div class="portfolio__contentContainer">
                                     <h4 class="portfolio__title">Etsy Giftify</h4>
-                                    <h6>API, JavaScript, Sass, Github, CSS3, HTML5, Agile</h6>
+                                    <h6>API, JavaScript, Sass, Github, CSS3, HTML5</h6>
                                     <p class="portfolio__copy copy"> A gift curating website that takes out the hassle of shopping by retrieving listings from the Etsy API. Built with Kandace.</p>
                                     <div class="portfolio__buttonContainer">
                                         <a href="https://b-chuang.github.io/Giftify/" target="_blank" class="button__rectangle--keyline">View Live</a>
@@ -221,7 +227,7 @@
                                 </div>
                                 <div class="portfolio__contentContainer">
                                     <h4 class="portfolio__title">Splash Pad</h4>
-                                    <h6>React, Firebase, ES6, JavaScript, Sass, Github, CSS3, HTML5, Agile</h6>
+                                    <h6>React, Firebase, ES6, JavaScript, Sass, Github, CSS3, HTML5</h6>
                                     <p class="portfolio_copy copy"> A landing page generator which allows customisation with live view, built with React and Firebase. Built with Hugh, Cynthia and Dianna.</p>
                                     <div class="portfolio__buttonContainer">
                                         <a href="https://project-six-c0a75.firebaseapp.com/" target="_blank" class="button__rectangle--keyline">View
@@ -239,12 +245,31 @@
                                 <div class="portfolio__contentContainer">
                                     <h4 class="portfolio__title">Brushy.io</h4>
                                     <h6>React, Firebase, ES6, JavaScript, jQuery, Github, CSS3, HTML5</h6>
-                                    <p class="portfolio__copy copy"> A tooth brushing guide and timer that stores the user's brushing time onto Firebase.</p>
+                                    <p class="portfolio__copy"> A tooth brushing guide and timer that stores the user's brushing time onto Firebase.</p>
                                     <div class="portfolio__buttonContainer">
                                         <a target="_blank" href="https://newproject1-8d8bb.firebaseapp.com/" class="button__rectangle--keyline">View
                                             Live</a>
                                         <a href="https://github.com/b-chuang/brushy" target="_blank" class="button__rectangle--keyline">View
                                             on Github</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio__container">
+                                <div class="portfolio__imgContainer">
+                                    <a href="https://b-chuang.github.io/billChuangProjectTwo/" target="_blank"><img class="work__img" src="./assets/eatery1.png"
+                                            alt="Mockup Images of Eatery website"></a>
+                                </div>
+                                <div class="portfolio__contentContainer">
+                                    <h4 class="portfolio__title">The Eatery</h4>
+                                    <h6>PSD Conversion, jQuery, Sass, CSS3, HTML5</h6>
+                                    <p class="portfolio__copy copy">Fully responsive PSD Conversion for the Eatery. </p>
+                                    <div class="portfolio__buttonContainer">
+                                        <a href="https://b-chuang.github.io/billChuangProjectTwo/" target="_blank" class="button__rectangle--keyline">View
+                                            Live
+                                        </a>
+                                        <a href="https://github.com/b-chuang/billChuangProjectTwo" target="_blank" class="button__rectangle--keyline">View
+                                            on Github
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -265,23 +290,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="portfolio__container">
-                                <div class="portfolio__imgContainer">
-                                    <a href="https://b-chuang.github.io/billChuangProjectTwo/" target="_blank"><img class="work__img" src="./assets/eatery1.png"
-                                            alt="Mockup Images of Eatery website"></a>
-                                </div>
-                                <div class="portfolio__contentContainer">
-                                    <h4 class="portfolio__title">The Eatery</h4>
-                                    <h6>PSD Conversion, jQuery, Sass, CSS3, HTML5</h6>
-                                    <p class="portfolio__copy copy">Fully responsive PSD Conversion for the Eatery. </p>
-                                    <div class="portfolio__buttonContainer">
-                                        <a href="https://b-chuang.github.io/billChuangProjectTwo/" target="_blank" class="button__rectangle--keyline">View Live
-                                        </a>
-                                        <a href="https://github.com/b-chuang/billChuangProjectTwo" target="_blank" class="button__rectangle--keyline">View on
-                                            Github</a>
-                                    </div>
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
                 </section>
@@ -419,7 +428,12 @@
                                             <h5>bc.codes1@gmail.com</h5>
                                     </a>
                                 </li>
-                                        
+                                <li>
+                                    <a href="https://www.linkedin.com/in/bill-c-55a8a9158/" target="blank">
+                                        <i class="fab fa-linkedin-in"></i>
+                                        <h5>Bill Chuang</h5>
+                                    </a>
+                                </li>
                                 <li>
                                     <a href="https://twitter.com/bc_codes" target="blank">
                                         <i class="fab fa-twitter"></i>
@@ -427,15 +441,16 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="https://www.linkedin.com/in/bill-c-55a8a9158/" target="blank">
-                                        <i class="fab fa-linkedin-in"></i>
-                                        <h5>LinkedIn</h5>
+                                    <a href="https://medium.com/@bc_codes" target="blank">
+                                        <i class="fab fa-medium-m"></i>
+                                        <h5>@bc_codes</h5>
                                     </a>
                                 </li>
+                               
                                 <li>
                                     <a href="https://github.com/b-chuang" target="blank">
                                         <i class="fab fa-github"></i>
-                                        <h5>GitHub</h5>
+                                        <h5>b-chuang</h5>
                                     </a>
                                 </li>
                             </ul>
@@ -464,9 +479,8 @@
     <script src="/dev/scripts/particles.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
 
-    <script src="http://code.jquery.com/jquery-[latest].min.js"></script>
-        
-
+    <script src="public/scripts/app.js"></script>
+    
    <!--  <script>  //Nav menu sliide
         function openSlideMenu() {
             document.getElementById('sideMenu').style.width = "210px";
