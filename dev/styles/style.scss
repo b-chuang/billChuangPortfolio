@@ -1,8 +1,8 @@
 @import "partials/_setup.scss";
 @import "partials/_utils.scss";
 @import "partials/_header.scss";
+@import "partials/_nav.scss";
 @import "partials/_main.scss";
-@import "partials/_footer.scss";
 
 * {
   /*   margin: 0;
@@ -29,6 +29,24 @@ body{
     margin: 0 auto;
 }
 
+
+a {
+    text-decoration: none;
+    color:black;
+}
+
+ul {
+	list-style-type: none;
+	display: inline-block;	
+	padding: 0px;
+	margin: 0px;
+}
+
+p {
+	line-height: 28px;
+}
+
+
 .hide{
     display: none;
 }
@@ -47,19 +65,37 @@ body{
 .flexItemFixed {
     width:15%;
     position: relative;
+    transition:all ease-in 0.3s;
 }
 
 .flexItemContent {
     padding: 20px;
     width: 85%;
+    transition:all ease-in 0.3s;
 }
-.navBar {
-    display:flex;
-    flex-direction: column;
-    position: fixed;
-    width:24%;
-    &__logo {
-        width:30%;
-        margin:65px 85px;
+
+.button {
+    margin-top: 20px;
+}
+
+
+
+@media (max-width:1180px){
+    .navBar {
+        display: none;
+        overflow-x:hidden;
+        left:-999%;
+        transition:margin-left 0.5s;
+    }
+
+    .flexItemFixed {
+        width:0%;
+    }
+
+    .flexItemContent {
+        padding:13px;
+        width: 100%;
+        margin:0 auto;
+        
     }
 }

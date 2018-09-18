@@ -1,0 +1,74 @@
+.navBar {
+    display:flex;
+    flex-direction: column;
+    position: fixed;
+    width:24%;
+
+
+    &__logo {
+        width:30%;
+        margin:65px 85px;
+    }
+
+    &__menu {
+        margin-left:8%;
+    }
+}
+
+.navFooter {
+    margin-left:8%;
+    margin-top:5%;
+}
+
+.navList__item {
+    margin-bottom:20px;
+    font-size:1.8rem;
+}
+
+.navFooter__socialLinks a {
+    margin-right:20px;
+}
+
+
+// SIDE MENU STYLES
+.sideNav {
+    height:100%;
+    width:0;
+    position: fixed;
+    z-index: 1;
+    top:0;
+    left:0;
+    background-color: #000;
+    opacity: 0.8;
+    overflow-x:hidden;
+    padding-top:60px;
+    transition:0.3s ease-out all;
+}
+
+.sideNav a {
+    padding: 10px 10px 10px 30px;
+    display:block;
+    transition:0.3s;
+    color:lightgrey;
+    &:hover {
+        font-weight: 700;
+    }
+}
+
+.sideNav .btn-close {
+    position: absolute;
+    top:0;
+    right:22px;
+    margin-left:50px;
+}
+
+.openSlide {
+    position: fixed;
+    z-index:1;
+}
+
+#main {
+    transition:margin-left 0.5s;
+    overflow:hidden;
+    /* width:100%; */
+}

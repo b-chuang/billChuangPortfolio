@@ -1,3 +1,7 @@
+//nav
+
+
+
 //header
 //scroll down button
 .scrollDown {
@@ -57,35 +61,8 @@ $fontLightGrey: #6e6e6e;
 $copyGrey: #4e4e4e;
 $borderGrey: rgba(35, 36, 40, 0.2);
 
-$accentOne: #ff6f00;
-$accentOneDark: darken($accentOne, 10%);
 
 $mainFont: 'Montserrat', sans-serif;
-
-a {
-	text-decoration: none;
-}
-
-ul {
-	list-style-type: none;
-	display: inline-block;	
-	padding: 0px;
-	margin: 0px;
-}
-
-.wrapper {
-	max-width: 970px;
-	margin: auto;
-	padding: 0px 15px 0px 15px;
-}
-
-a {
-	text-decoration:none;
-}
-
-p {
-	line-height: 28px;
-}
 
 
 // Media Queries

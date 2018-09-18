@@ -1,6 +1,8 @@
 
 #particles-js {
     height:95vh;
+    display: flex;
+    flex-direction: row-reverse;
     // position: relative;
     // background: 
     //     /* url(../../../assets/me1.jpeg) no-repeat,  */
@@ -16,7 +18,7 @@
         /* url(../../../assets/me1.jpeg) no-repeat,  */
         url(../../../assets/brushStroke.png) no-repeat,
         url(../../../assets/brushStroke2.png) no-repeat, #E6F7EC;
-        background-size: 600px;
+    background-size: 60%;
 }
 
 
@@ -24,8 +26,9 @@
 .headerContent {
     position: absolute;
     text-transform: uppercase;
-    margin-left: 700px;
-    margin-top: 300px;
+    right:100px;
+    top: 300px;
+    align-self: center;
 
     &__hello {
         font-size: 1.3rem;
@@ -62,6 +65,29 @@
         display: flex;
         flex-direction: row;
     }
-    
+}
+/* 
+
+@media (max-width:1040px) {
+    .headerContent {
+        left:-25%;
+    }
 }
 
+@media (max-width:860px){
+    .headerContent {
+        left:-50%;
+        font-size:1.2rem;
+    }
+}
+
+@media (max-width:700px) {
+    .headerContent {
+        left:-60%;
+        top:15%;
+    }
+    .particleWrapper {
+        background-size:80%;
+        top:5%;
+    }
+} */
