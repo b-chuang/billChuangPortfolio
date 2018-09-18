@@ -3,22 +3,16 @@
     height:95vh;
     display: flex;
     flex-direction: row-reverse;
-    // position: relative;
-    // background: 
-    //     /* url(../../../assets/me1.jpeg) no-repeat,  */
-    //     url(../../../assets/brushStroke.png) no-repeat,
-    //     url(../../../assets/brushStroke2.png) no-repeat, #E6F7EC;
-    //     background-size: 600px;
 }
 
 .particleWrapper {
     height: 95vh;
     position: relative;
     background: 
-        /* url(../../../assets/me1.jpeg) no-repeat,  */
-        url(../../../assets/brushStroke.png) no-repeat,
-        url(../../../assets/brushStroke2.png) no-repeat, #E6F7EC;
-    background-size: 60%;
+        url(../../../assets/codeBrush50.png) no-repeat, #E6F7EC;
+        /* url(../../../assets/brushStroke2.png) no-repeat, */
+    background-size: 50%;
+    background-position: 50% 50%
 }
 
 
@@ -66,28 +60,15 @@
         flex-direction: row;
     }
 }
-/* 
 
+
+
+
+
+/* 
 @media (max-width:1040px) {
     .headerContent {
         left:-25%;
     }
 }
-
-@media (max-width:860px){
-    .headerContent {
-        left:-50%;
-        font-size:1.2rem;
-    }
-}
-
-@media (max-width:700px) {
-    .headerContent {
-        left:-60%;
-        top:15%;
-    }
-    .particleWrapper {
-        background-size:80%;
-        top:5%;
-    }
-} */
+ */

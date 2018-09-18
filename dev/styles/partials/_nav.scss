@@ -23,6 +23,9 @@
 .navList__item {
     margin-bottom:20px;
     font-size:1.8rem;
+    &:hover {
+        font-weight:800;
+    }
 }
 
 .navFooter__socialLinks a {
@@ -43,6 +46,8 @@
     overflow-x:hidden;
     padding-top:60px;
     transition:0.3s ease-out all;
+
+
 }
 
 .sideNav a {
@@ -65,10 +70,18 @@
 .openSlide {
     position: fixed;
     z-index:1;
+    padding:2%;
+    display: none;
 }
 
 #main {
     transition:margin-left 0.5s;
     overflow:hidden;
-    /* width:100%; */
+    margin-left: 0px;
 }
+
+.main {
+    margin-left: 0px;
+}
+
+

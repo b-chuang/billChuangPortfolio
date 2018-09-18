@@ -7,15 +7,7 @@
 // ABOUT SECTION START
 .about__section {
     margin-top:2%;
-    /* background: #E2F9EC; */
     height: 95vh;
-    &__me {
-        align-items: center;
-    }
-    &__contents {
-        display:flex;
-        flex-direction:row;
-    }
 	background: linear-gradient(360deg, rgba(225,255,255, 0.3), rgba(255,255,255,1)), url(/assets/tobg2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -46,16 +38,23 @@
     }
 }
 
-.about__imgContainer{
-    margin:0 auto;
-    width:18%;
-    margin-top:8%;
+
+.about__contents {
+    display: flex;
+    flex-direction: row;
 }
 
-.about__imgContainer img{
-    border-radius: 50%;
-    border: 1px solid darkgrey;
+.about__imgContainer{
+    width:50%;
 }
+
+.about__me {
+    width:54%;
+    h3 {
+        font-weight: 400;
+    }
+}
+
 // ABOUT SECTION END
 
 @media (max-width: 1180px) {
@@ -266,7 +265,7 @@ h1.skillsHeading {
     display: flex;
     flex: 0 1 auto;
     flex-flow: row nowrap;
-
+    justify-content: space-around;
 }
 
 .blog__child {
@@ -274,15 +273,35 @@ h1.skillsHeading {
 }
 
 .blog__container {
-    border: 1px solid red;
     &__item {
         min-width: 0
     }
 }
 
+.blog__figcaption {
+    border: 2px solid white;
+    background: #fff;   
+    height: 55px;
+    margin: 0px 2px;
+    padding:2px;
+}
+
+.blog__content {
+    margin: 0px 8px;
+    height:206px;
+    overflow:hidden;
+    
+}
+
 .blog__img {
     width: 100%;
 }
+
+.blog__container__item figure img {
+    height:100%;
+}
+
+
 // BLOG SECTION END
 
 

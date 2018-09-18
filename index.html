@@ -15,7 +15,7 @@
     <div class="flexContainer">
         <!-- HAMBURGER -->
         <span class="openSlide">
-            <a href="#" onclick="openSlideMenu()"><i class="fas fa-bars"></i></a> <!-- icon svg goes here -->
+            <a href="#"><i class="fas fa-bars"></i></a> <!-- icon svg goes here -->
         </span>
 
         <div class="flexItemFixed">
@@ -97,12 +97,26 @@
         </div> <!-- flexItemFixed END -->
         <!-- DROPDOWN NAVBAR START-->
         <div id="sideMenu" class="sideNav">
-            <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Blog</a>
-            <a href="#">Contact</a>
+            <button class="btn-close">&times;</a>
+            <nav class="navBar__menu" id="menu">
+                <ul class="navList">
+                    <li class="navList__item">
+                        <a href="#home" class="navList__link">Home</a>
+                    </li>
+                    <li class="navList__item">
+                        <a href="#about" class="navList__link">About</a>
+                    </li>
+                    <li class="navList__item">
+                        <a href="#portfolio" class="navList__link">Portfolio</a>
+                    </li>
+                    <li class="navList__item">
+                        <a href="#blog" class="navList__link">Blog</a>
+                    </li>
+                    <li class="navList__item">
+                        <a href="#contact" class="navList__link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
         <!-- DROPDOWN NAVBAR END -->
 
@@ -123,10 +137,14 @@
 
                                 <div class="headerContent__socialIcons">
                                     <ul>
-                                        <li class="headerContent__socialIcon"><i class="fab fa-twitter"></i>＿＿</li>
-                                        <li class="headerContent__socialIcon"><i class="fab fa-github"></i>＿＿</li>
-                                        <li class="headerContent__socialIcon"><i class="fab fa-linkedin-in"></i>＿＿</li>
-                                        <li class="headerContent__socialIcon"><i class="fas fa-envelope"></i></li>
+                                        <li class="headerContent__socialIcon">
+                                            <a href="https://twitter.com/bc_codes" target="_blank" class="navFooter__socialLinks__item">
+                                            <i class="fab fa-twitter"></i></a>＿＿</li>
+                                        <li class="headerContent__socialIcon">
+                                            <a href="https://github.com/b-chuang" target="_blank" class="navFooter__socialLinks__item">
+                                            <i class="fab fa-github"></i></a>＿＿</li>
+                                        <li class="headerContent__socialIcon"><a href="https://www.linkedin.com/in/bill-c-55a8a9158/" target="_blank" class="navFooter__socialLinks__item"><i class="fab fa-linkedin-in"></i></a>＿＿</li>
+                                        <li class="headerContent__socialIcon"><a href="mailto:bc.codes1@gmail.com" class="navFooter__socialLinks__item"><i class="fas fa-envelope"></i></a></li>
                                     </ul>
                                 </div>
 
@@ -155,7 +173,7 @@
                                     away from my computer I love to explore.</h3>
                                 </div>
                                 <div class="about__imgContainer">
-                                    <img src="/assets/me1.jpeg" alt="Headshot of Bill Chuang">
+                                    <img src="/assets/headshotBrush.png" alt="Headshot of Bill Chuang">
                                 </div>
                             </div>
 
@@ -358,8 +376,8 @@
                                         <!--  <h2 class="blog__title">BLOG 1</h2> -->
                                         <figure class="blog__content">
                                             <div class="blog__img"><img src="assets/files1.png"></div>
-                                            <figcaption>How to organise your SCSS (pronounced “SASS”) files, and a bit on partials.</figcaption>
                                         </figure>
+                                        <figcaption class="blog__figcaption">How to organise your SCSS (pronounced “SASS”) files, and a bit on partials.</figcaption>
                                     </div>
                                 </li>
                                 <li class="blog__child">
@@ -367,8 +385,8 @@
                                         <!--  <h2>BLOG 2</h2> -->
                                         <figure class="blog__content">
                                             <div class="blog__img"><img src="assets/blog2.png"></div>
-                                            <figcaption>Day N' Night - A toggle switch for night mode</figcaption>
                                         </figure>
+                                        <figcaption class="blog__figcaption">Day N' Night - A toggle switch for night mode</figcaption>
                                     </div>
                                 </li>
                                 <li class="blog__child">
@@ -377,8 +395,8 @@
                                         <figure class="blog__content">
                                             <div class="blog__img"><img src="assets/comp1.png"></div>
                                             
-                                            <figcaption>How to get into coding</figcaption>
                                         </figure>
+                                        <figcaption class="blog__figcaption">How to get into coding</figcaption>
                                     </div>
                                 </li>
                             </ul>
@@ -398,7 +416,7 @@
                                 <li>
                                     <a href="mailto:bc.codes1@gmail.com" class="email">
                                             <i class="fa fa-envelope"></i>
-                                            <h5>bc_codes1@gmail.com</h5>
+                                            <h5>bc.codes1@gmail.com</h5>
                                     </a>
                                 </li>
                                         
@@ -445,9 +463,11 @@
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="/dev/scripts/particles.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
-    <script src="public/scripts/app.js"></script>
-    
-    <script>  //Nav menu sliide
+
+    <script src="http://code.jquery.com/jquery-[latest].min.js"></script>
+        
+
+   <!--  <script>  //Nav menu sliide
         function openSlideMenu() {
             document.getElementById('sideMenu').style.width = "210px";
             document.getElementById('main').style.marginLeft = "0px";
@@ -457,7 +477,7 @@
             document.getElementById('sideMenu').style.width = "0px";
             document.getElementById('main').style.marginLeft = "0px";
         }
-    </script>
+    </script> -->
 
     
 

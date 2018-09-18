@@ -28,5 +28,9 @@ particlesJS.load('particles-js', 'assets/particles.json', function () {
         //Smooth scroll 
         $('a').smoothScroll({ offset: -1, speed: 700 });
 
+        //close slider
+        $(document).ready(function () {
 
-      
+            
+
+        });
