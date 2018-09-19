@@ -30,11 +30,11 @@ particlesJS.load('particles-js', 'assets/particles.json', function () {
 
             //Open close side nav bar            
             $(".openSideNav").click(function (event) {
-
+                console.log('hello bill');
                 event.preventDefault();
-
                 $("nav").toggleClass("navBarOpen");
                 $("main").toggleClass("mainSlideOpen");
+
 
                 if ($(window).width() > 1180) {
                     $("main").removeClass("mainSlideOpen");

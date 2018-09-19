@@ -115,8 +115,12 @@ p {
     }
     .openSlide {
         display: block;
+        @include respond-to("small") {
+            margin:12px;
+        }
     }
 }
+
 
 
 @media (max-width:480px) {
@@ -154,10 +158,6 @@ p {
 
     h4 {
         font-size: 2.0rem;
-    }
-
-    .blog__heading {
-        margin-left:2%;
     }
 
     .carousel-cell svg {
