@@ -11,12 +11,13 @@
     }
 
     &__menu {
-        margin-left:8%;
+        margin-left:39px;
+        margin-top: 50%;
     }
 }
 
 .navFooter {
-    margin-left:8%;
+    margin-left:40px;
     margin-top:5%;
 }
 
@@ -70,11 +71,13 @@
     margin-left:50px;
 }
 
+
+
 .openSlide {
     position: fixed;
     z-index:1;
     padding:2%;
-    display: none;
+    /* display: none; */
 }
 
 #main {

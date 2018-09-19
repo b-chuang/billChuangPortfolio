@@ -83,6 +83,13 @@ p {
 }
 
 
+@media (max-width:1280px){
+    #main.marginSlideOpen {
+        margin-left:0%;
+    }
+}
+
+
 @media (max-width:1180px){
     .navBar {
         display: none;
@@ -110,3 +117,4 @@ p {
         display: block;
     }
 }
+

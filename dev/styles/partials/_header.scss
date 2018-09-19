@@ -20,7 +20,7 @@
 .headerContent {
     position: absolute;
     text-transform: uppercase;
-    right:100px;
+    right:190px;
     top: 300px;
     align-self: center;
 
@@ -41,14 +41,15 @@
     &__title {
         margin:2px 0;
         letter-spacing: 6px;
-        font-family: 'Muli', Helvetica, sans-serif, sans-serif;
+        font-family: 'Work Sans', Helvetica, sans-serif, sans-serif;
+        font-weight: 300;
         text-transform: uppercase;
     }
     &__subHeading {
         margin-left: 35px;
         font-size: 1.7rem;
         font-weight: 500;
-        color:#898f98;
+        color:#000;
     }
     &__socialIcons ul {
         display: flex;
@@ -59,11 +60,16 @@
         display: flex;
         flex-direction: row;
     }
-        a:hover {
-            font-size:1.8rem;
-            color:#898f98;
-        }
+    a:hover {
+        font-size:1.8rem;
+        color:#898f98;
+    }
+
+    @include respond-to("medium-large") {
+    right:50px;       
 }
+
+    
 
 
 

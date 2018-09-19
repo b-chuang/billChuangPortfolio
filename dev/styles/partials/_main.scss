@@ -1,20 +1,11 @@
-/* section {
-    border:1px blue solid;
-} */
-
 
 
 // ABOUT SECTION START
 .about__section {
     margin-top:2%;
-    height: 95vh;
-	background: linear-gradient(360deg, rgba(225,255,255, 0.3), rgba(255,255,255,1)), url(/assets/tobg2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-	background-position: left 122px bottom 0px;
-	background-attachment: fixed;
-	padding-bottom: 160px;
-	position: relative;
+    background-color: #e6f7ec;
+    height: 85vh;
+    position: relative;
 	@include respond-to("medium-large") {
 		background-attachment: scroll;
 	}
@@ -41,15 +32,23 @@
 
 .about__contents {
     display: flex;
-    flex-direction: row;
+    /* border: 1px solid red; */
+    position: relative;
 }
 
 .about__imgContainer{
-    width:50%;
+    width:60%;
+    top:-55%;
+    right:-18%;
+    /* border: 1px solid blue; */
+    position: absolute;
 }
 
 .about__me {
-    width:54%;
+    line-height:2;
+    width:55%;
+    /* border: 1px solid green; */
+    flex-direction: row;
     h3 {
         font-weight: 400;
     }
@@ -101,10 +100,11 @@
 
 h4.portfolio__title {
     margin-left:0;
-    font-size: 1.8rem;
+    font-size: 2.2rem;
 }
 
 .portfolio__container {
+    margin:85px 0px;
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
@@ -133,6 +133,14 @@ h4.portfolio__title {
 	}
 }
 
+.portfolio__container:first-child {
+    margin-top: 0px;
+}
+.portfolio__container:last-child {
+    padding-top:40px;
+    margin-bottom:0px;
+}
+
 .portfolio__contentContainer {
 	padding: 80px 45px	;
 	@include respond-to("medium-large") {
@@ -150,11 +158,12 @@ h4.portfolio__title {
 		margin: 0px 30px 0px 0px;
     }
     a{
-        border-bottom: 3px solid black;
+        border-bottom: 2px solid black;
+        padding: 3px;
     }
     a:hover {
         transition: ease-in-out all 0.2s;
-        border-bottom: 2px solid #898f98;
+        border-bottom: 2px dotted #898f98;
     }
 	@include respond-to("small") {
 		flex-direction: column;
@@ -162,12 +171,11 @@ h4.portfolio__title {
 	}
 }
 
-.portfolio__copy {
+.portfolio__p {
 	padding: 0px 0px 30px 0px;
     margin: 0px;
-    
+    font-size: 1.8rem;
 }
-
 
 
 
@@ -266,6 +274,7 @@ h1.skillsHeading {
 }
 
 .blog__heading {
+    padding-bottom:4%;
     padding-top:6%;
     padding-left:5%;
     &::before {
@@ -274,7 +283,7 @@ h1.skillsHeading {
         content: "";
         position: absolute;
         background-color:  #898f98;
-        top: 18%;
+        top: 16%;
         left: 4%;
     }
 }
@@ -299,16 +308,18 @@ h1.skillsHeading {
 .blog__figcaption {
     border: 2px solid white;
     background: #fff;   
-    height: 55px;
-    margin: 0px 2px;
-    padding:2px;
+    height: 60px;
+    margin: 0px 8px;
+    padding:8px;
 }
 
 .blog__content {
     margin: 0px 8px;
     height:206px;
     overflow:hidden;
-    
+    &:hover {
+        border:2px solid #E2F9EC;
+    }
 }
 
 .blog__img {
@@ -327,6 +338,7 @@ h1.skillsHeading {
 .contact {
     
     &__section {
+        height:59vh;
         background: #E2F9EC;
         margin-top:2%;
         padding-bottom:5%;
@@ -347,7 +359,7 @@ h1.skillsHeading {
         content: "";
         position: absolute;
         background-color:  #898f98;
-        top:30%;
+        top:113px;
         left:0;   
     }
 }
@@ -365,6 +377,11 @@ h1.skillsHeading {
     margin: 25px 0;
     display:flex;
     flex-direction:row;
+    &:hover {
+        font-size: 2.4rem;
+        font-weight: 400;
+        color: #898f98;
+    }
 }
 
 .contact__links h5 {
