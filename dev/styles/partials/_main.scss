@@ -6,8 +6,8 @@
     background-color: #e6f7ec;
     height: 85vh;
     position: relative;
+    overflow:hidden;
 	@include respond-to("medium-large") {
-		background-attachment: scroll;
 	}
 }
 
@@ -25,10 +25,17 @@
             background-color:  #898f98;
             bottom: 40%;
             left: -5%;
+            @include respond-to("medium-large") {
+                width:25px;
+            }
+            @include respond-to("small") {
+                    width:15px;
+                    left:-20px;
+            }
+            
         }
     }
 }
-
 
 .about__contents {
     display: flex;
@@ -37,11 +44,23 @@
 }
 
 .about__imgContainer{
-    width:60%;
-    top:-55%;
-    right:-18%;
+    width:50%;
+    top:-61%;
+    right:-15%;
     /* border: 1px solid blue; */
     position: absolute;
+    @include respond-to("xlarge") {
+        top: -43%;
+    }
+
+    @include respond-to("large") {
+        top: -14%;
+    }
+
+    @include respond-to("medium-large") {
+        /* top: -61%; */
+        
+	}
 }
 
 .about__me {
@@ -51,6 +70,10 @@
     flex-direction: row;
     h3 {
         font-weight: 400;
+
+        @include respond-to("medium-large") {
+        font-size: 1.6rem;  
+        }
     }
 }
 
@@ -95,6 +118,12 @@
         background-color:  #898f98;
         bottom: 20%;
         left: -5%;
+        @include respond-to("medium-large") {
+            width:25px; 
+            @include respond-to("small") {
+                width:15px;  
+            }
+        }
     }
 }
 
@@ -160,6 +189,9 @@ h4.portfolio__title {
     a{
         border-bottom: 2px solid black;
         padding: 3px;
+        @include respond-to("small") {
+		margin-bottom:18px;
+	    }
     }
     a:hover {
         transition: ease-in-out all 0.2s;
@@ -214,7 +246,14 @@ h1.skillsHeading {
         background-color:  #898f98;
         bottom:18%;
         left:4%;
-    }
+        @include respond-to("medium-large") {
+        width:20px; 
+        }
+        @include respond-to("small") {
+            width:15px;
+            top:35px;
+        }
+        }
 }
 
 .carousel {
@@ -283,8 +322,16 @@ h1.skillsHeading {
         content: "";
         position: absolute;
         background-color:  #898f98;
-        top: 16%;
+        top: 14%;
         left: 4%;
+        @include respond-to("large") {
+        width:20px; 
+        }
+        @include respond-to("small") {
+            width:15px;
+            top:39px;
+
+        }
     }
 }
 
@@ -293,10 +340,18 @@ h1.skillsHeading {
     flex: 0 1 auto;
     flex-flow: row nowrap;
     justify-content: space-around;
+    @include respond-to("small") {
+    flex-direction: column;
+    }
 }
 
 .blog__child {
     width:33.33%;
+    @include respond-to("small") {
+    width:90%;
+    margin:0 auto;
+    margin-bottom:20px;
+    }
 }
 
 .blog__container {
@@ -311,6 +366,9 @@ h1.skillsHeading {
     height: 60px;
     margin: 0px 8px;
     padding:8px;
+    @include respond-to("medium-large") {
+    height:74px;
+    }
 }
 
 .blog__content {
@@ -319,6 +377,9 @@ h1.skillsHeading {
     overflow:hidden;
     &:hover {
         border:2px solid #E2F9EC;
+    }
+    @include respond-to("medium-large") {
+    height:160px; 
     }
 }
 
@@ -338,7 +399,6 @@ h1.skillsHeading {
 .contact {
     
     &__section {
-        height:59vh;
         background: #E2F9EC;
         margin-top:2%;
         padding-bottom:5%;
@@ -360,7 +420,15 @@ h1.skillsHeading {
         position: absolute;
         background-color:  #898f98;
         top:113px;
-        left:0;   
+        left:0; 
+        @include respond-to("large") {
+        top:98px;
+        width:25px;   
+        }
+        @include respond-to("small") {
+        top:72px;
+        width:15px;   
+        }
     }
 }
 

@@ -118,3 +118,50 @@ p {
     }
 }
 
+
+@media (max-width:480px) {
+    .particleWrapper {
+        height:85vh;
+        background-size: 74%;
+        background-position: -30% -6%;
+    }
+
+    .about__me {
+        width:95%;
+    }
+
+    .about__me h3 {
+        font-size: 1.3rem;
+        line-height: 1.6;
+    }
+
+    .about__contents {
+        position: absolute;
+        display: block;
+    }
+
+    .about__imgContainer {
+        position: relative;
+        margin:0 auto;
+        width: 310px;
+        margin-right:20%;
+    }
+
+    h1 {
+        font-size: 2.6rem;
+        margin-left:2%;
+    }
+
+    h4 {
+        font-size: 2.0rem;
+    }
+
+    .blog__heading {
+        margin-left:2%;
+    }
+
+    .carousel-cell svg {
+        width: 100px;
+        margin:55px 45px;
+    }
+}

@@ -91,4 +91,10 @@ $mainFont: 'Montserrat', sans-serif;
 			@content;
 		}
 	}
+
+	@else if $breakpoint == "xlarge" {
+		@media (max-width: 1180px) {
+			@content;
+		}
+	}
 }
