@@ -8,11 +8,20 @@
     &__logo {
         width:30%;
         margin:65px 85px;
+        @include respond-to("medium") {
+            margin:65px 55px;
+        }
+        @include respond-to("small") {
+            margin:65px 45px;
+        }
     }
 
     &__menu {
         margin-left:39px;
         margin-top: 50%;
+        @include respond-to("small") {
+            margin-left:30px;
+        }
     }
 }
 
@@ -24,13 +33,30 @@
 .navList__item {
     margin-bottom:20px;
     font-size:1.8rem;
+    @include respond-to("medium") {
+            font-size:1.4rem;
+        }
+    @include respond-to("small") {
+            font-size: 1.2rem;
+        }
     &:hover {
         font-weight:800;
     }
 }
 
+.navFooter__socialLinks {
+    @include respond-to("large") {
+            display: flex;
+            flex-direction: column;
+        }
+}
+
 .navFooter__socialLinks a {
     margin-right:20px;
+
+    @include respond-to("large") {
+        margin: 15px 0;
+    }
     &:hover {
 
         color:#898f98;
