@@ -133,7 +133,7 @@ h4.portfolio__title {
 }
 
 .portfolio__container {
-    margin:85px 0px;
+    margin:15px 0px;
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
@@ -248,17 +248,16 @@ h1.skillsHeading {
         content: "";
         position: absolute;
         background-color:  #898f98;
-        bottom:16px;
+        bottom:15px;
         @include respond-to("medium-large") {
         width:20px; 
         }
         @include respond-to("small") {
             width:15px;
-            top:33px;
-            
         }
-        }
+    }
 }
+
 
 .carousel {
 	background: #E2F9EC;
@@ -330,12 +329,17 @@ h1.skillsHeading {
         position: absolute;
         background-color:  #898f98;
         @include respond-to("large") {
-        bottom:49px;
+        bottom:50px;
         }
         @include respond-to("medium-large") {
         width: 25px;
         bottom:40px;
         }
+
+        @include respond-to("medium") {
+            bottom:35px;
+        }
+
         @include respond-to("small") {
             width:15px;
             bottom:28px;
@@ -360,12 +364,12 @@ h1.skillsHeading {
 .blog__child {
     width:33.33%;
     @include respond-to("large") {
-    width:55%;
-    margin:0 auto;
-    margin-bottom:20px;
+        width:55%;
+        margin:0 auto;
+        margin-bottom:20px;
     }
     @include respond-to("small") {
-
+        width:78%;
     }
 }
 
@@ -446,13 +450,13 @@ h1.skillsHeading {
             width:25px;   
         }
         @include respond-to("medium-large") {
-            top:18px;
+            top:15px;
             left:-35px;
         }
 
 
         @include respond-to("small") {
-            top:15px;
+            top:12px;
             width:15px;   
             left:-20px;
         }

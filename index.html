@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
     <title>BILLC.tech</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link type="image/png" rel="icon" href="/assets/bcLogoW2.png">
     <link href="https://fonts.googleapis.com/css?family=Muli:400,700|Karla:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500" rel="stylesheet">
@@ -206,7 +207,7 @@
                             <div class="portfolio__container">
                                 <div class="portfolio__imgContainer">
                                     <a href="https://b-chuang.github.io/Giftify" target="_blank">
-                                        <img class="portfolio__img" src="./assets/etsy1.png" alt="Mockup Images of Etsy Giftify website">
+                                        <img data-aos="zoom-in-right" class="portfolio__img" src="./assets/etsy1.png" alt="Mockup Images of Etsy Giftify website">
                                     </a>
                                 </div>
                                 <div class="portfolio__contentContainer">
@@ -223,7 +224,7 @@
                             <div class="portfolio__container">
                                 <div class="portfolio__imgContainer">
                                     <a href="https://project-six-c0a75.firebaseapp.com/" target="_blank">
-                                        <img class="portfolio__img" src="./assets/splashPad1.png" alt="Mockup Images of Splash Pad website">
+                                        <img data-aos="zoom-in-left" class="portfolio__img" src="./assets/splashPad1.png" alt="Mockup Images of Splash Pad website">
                                     </a>
                                 </div>
                                 <div class="portfolio__contentContainer">
@@ -240,8 +241,7 @@
                             </div>
                             <div class="portfolio__container">
                                 <div class="portfolio__imgContainer">
-                                    <a target="_blank" href="https://newproject1-8d8bb.firebaseapp.com/"><img class="work__img animated fadeIn wow"
-                                            src="./assets/brushy1.png" alt="Mockup Images of Brushy.io"></a>
+                                    <a target="_blank" href="https://newproject1-8d8bb.firebaseapp.com/"><img class="work__img" data-aos="zoom-in-right" src="./assets/brushy1.png" alt="Mockup Images of Brushy.io"></a>
                                 </div>
                                 <div class="portfolio__contentContainer">
                                     <h4 class="portfolio__title">Brushy.io</h4>
@@ -257,7 +257,8 @@
                             </div>
                             <div class="portfolio__container">
                                 <div class="portfolio__imgContainer">
-                                    <a href="https://b-chuang.github.io/billChuangProjectTwo/" target="_blank"><img class="work__img" src="./assets/eatery1.png"
+                                    <a href="https://b-chuang.github.io/billChuangProjectTwo/" target="_blank"><img  class="work__img" 
+                                         data-aos="zoom-in-left" src="./assets/eatery1.png"
                                             alt="Mockup Images of Eatery website"></a>
                                 </div>
                                 <div class="portfolio__contentContainer">
@@ -276,7 +277,8 @@
                             </div>
                             <div class="portfolio__container">
                                 <div class="portfolio__imgContainer">
-                                    <a href="https://b-chuang.github.io/gcsCalc/" target="_blank"><img class="work__img animated fadeIn wow"
+                                    <a href="https://b-chuang.github.io/gcsCalc/" target="_blank"><img class="work__img" 
+                                         data-aos="zoom-in-right"
                                             src="./assets/gcs1.png" alt="Mockup Images of Glasgow Coma Scale Calculator"></a>
                                 </div>
                                 <div class="portfolio__contentContainer">
@@ -481,6 +483,10 @@
 	<!-- JQUERY SCRIPT END -->
 	
     <!-- SCRIPTS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 	<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB"
 	 crossorigin="anonymous"></script>
 	
