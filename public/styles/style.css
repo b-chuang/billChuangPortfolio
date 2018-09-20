@@ -861,9 +861,10 @@ p {
     margin-left: 20px; }
   .blog__heading {
     padding-top: 50px;
-    margin-left: 35px; }
+    margin-left: 15px; }
   h1.skillsHeading::before {
-    left: -7%; }
+    left: -7%;
+    bottom: 11px; }
   h1.blog__heading::before {
     bottom: 25px;
     left: -7%; }
