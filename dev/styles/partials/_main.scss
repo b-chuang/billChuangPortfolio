@@ -3,7 +3,7 @@
 // ABOUT SECTION START
 .about__section {
     margin-top:2%;
-    background-color: #e6f7ec;
+    background-color: #E5E9FF;
     height: 78vh;
     position: relative;
     overflow:hidden;
@@ -91,7 +91,7 @@
 
 .portfolio__section {
     margin-top:2%;
-    background: #E2F9EC;
+    background: #E5E9FF;
     padding-bottom:5%;
 }
 
@@ -223,7 +223,7 @@ h4.portfolio__title {
 
 //SKILLS SECTION START
 .skills__section {
-    background: #E2F9EC;
+    background: #E5E9FF;
     padding-bottom:1%;
 }
 
@@ -260,7 +260,7 @@ h1.skillsHeading {
 
 
 .carousel {
-	background: #E2F9EC;
+	background: #E5E9FF;
     margin: 45px 0;
     overflow: hidden;
 }
@@ -309,7 +309,7 @@ h1.skillsHeading {
 
 // BLOG SECTION START
 .blog {
-    background: #E2F9EC;
+    background: #E5E9FF;
     margin-top:2%;
     padding-bottom:6%;
     position:relative;
@@ -396,7 +396,7 @@ h1.skillsHeading {
     margin: 0px 8px;
     overflow:hidden;
     &:hover {
-        border:2px solid #E2F9EC;
+        border:2px solid #E5E9FF;
     }
     @include respond-to("medium-large") {
     margin: 0px;
@@ -421,7 +421,7 @@ h1.skillsHeading {
 .contact {
     
     &__section {
-        background: #E2F9EC;
+        background: #E5E9FF;
         margin-top:2%;
         padding-bottom:5%;
     }
