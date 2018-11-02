@@ -129,6 +129,11 @@ p {
         background-position: -30% -6%;
     }
 
+    ul.navList {
+        text-align: center;
+        margin-left: 0;
+    }
+
     .about__me {
         width:95%;
     }
@@ -221,6 +226,11 @@ p {
 
     .carousel {
         margin:0;
+    }
+
+    ul.navList {
+        text-align: left;
+        margin-left: 0;
     }
 
 }

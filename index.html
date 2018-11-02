@@ -7,7 +7,7 @@
     
     <title>BILLC.tech</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link type="image/png" rel="icon" href="/assets/bcLogoW2.png">
+    <link type="image/png" rel="icon" href="/assets/bcLogo2.png">
     <link href="https://fonts.googleapis.com/css?family=Muli:400,700|Karla:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500" rel="stylesheet">
 	<link rel="stylesheet" href="/public/styles/style.css">
@@ -32,7 +32,7 @@
                         <!-- LOGO START TRYINA-->
                         <nav class="navBar__logo">
                             <div class="logoHolder">
-                                <a href="#home"><img src="/assets/bcLogo1.svg" alt="B logo"></a>
+                                <a href="#home"><img src="/assets/bcLogo2.png" alt="B logo"></a>
                             </div>
                         </nav>
                         <!-- LOGO END -->
@@ -174,7 +174,7 @@
                                     dry code that have included thought on engaging user experience, organised design, accessibility and performance. When I'm
                                     away from my computer I love to get outdoors and explore anything.</h3>
 
-                                    <a href="/assets/1UXbillc2018.pdf" download>👉 DOWNLOAD RÉSUMÉ</a>
+                                    <a target="_blank" href="/assets/1UXbillc2018.pdf">👉 <u>DOWNLOAD RÉSUMÉ</u></a>
                                 </div>
                                 <div class="about__imgContainer">
                                     <img src="/assets/headshotBrush.jpg" alt="Headshot of Bill Chuang">
@@ -200,10 +200,28 @@
                         </div>
                 
                         <div class="portfolio__wrapper">
-                            <div class="portfolio__container">
+
+                            <div data-aos="fade-up" class="portfolio__container">
+                                <div class="portfolio__imgContainer">
+                                    <a href="./assets/UXproject1.png" target="_blank">
+                                        <img class="portfolio__img" src="./assets/foodgivemock1.png" alt="Mockup Images of Food Give website and mobile app">
+                                    </a>
+                                </div>
+                                <div class="portfolio__contentContainer">
+                                    <h4 class="portfolio__title">Food Give</h4>
+                                    <h6>UX/UI problem solving, user centered approach, high flow, wireframing, Sketch, Axure</h6>
+                                    <p class="portfolio__p"> Case study challenge. Create an experience to help the User better understand resource consumption.</p>
+                                    <div class="portfolio__buttonContainer">
+                                        <a href="./assets/UXproject1.png" target="_blank" class="button__rectangle--keyline">View
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div data-aos="fade-up" class="portfolio__container">
                                 <div class="portfolio__imgContainer">
                                     <a href="https://b-chuang.github.io/Giftify" target="_blank">
-                                        <img data-aos="zoom-in-right" class="portfolio__img" src="./assets/etsy1.png" alt="Mockup Images of Etsy Giftify website">
+                                        <img class="portfolio__img" src="./assets/etsy1.png" alt="Mockup Images of Etsy Giftify website">
                                     </a>
                                 </div>
                                 <div class="portfolio__contentContainer">
@@ -217,10 +235,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="portfolio__container">
+                            <div data-aos="fade-up" class="portfolio__container">
                                 <div class="portfolio__imgContainer">
                                     <a href="https://project-six-c0a75.firebaseapp.com/" target="_blank">
-                                        <img data-aos="zoom-in-left" class="portfolio__img" src="./assets/splashPad1.png" alt="Mockup Images of Splash Pad website">
+                                        <img class="portfolio__img" src="./assets/splashPad1.png" alt="Mockup Images of Splash Pad website">
                                     </a>
                                 </div>
                                 <div class="portfolio__contentContainer">
@@ -235,9 +253,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="portfolio__container">
+                            <div data-aos="fade-up" class="portfolio__container">
                                 <div class="portfolio__imgContainer">
-                                    <a target="_blank" href="https://newproject1-8d8bb.firebaseapp.com/"><img class="work__img" data-aos="zoom-in-right" src="./assets/brushy1.png" alt="Mockup Images of Brushy.io"></a>
+                                    <a target="_blank" href="https://newproject1-8d8bb.firebaseapp.com/"><img class="work__img" src="./assets/brushy1.png" alt="Mockup Images of Brushy.io"></a>
                                 </div>
                                 <div class="portfolio__contentContainer">
                                     <h4 class="portfolio__title">Brushy.io</h4>
@@ -251,15 +269,15 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="portfolio__container">
+                            <div data-aos="fade-up" class="portfolio__container">
                                 <div class="portfolio__imgContainer">
                                     <a href="https://b-chuang.github.io/billChuangProjectTwo/" target="_blank"><img  class="work__img" 
-                                         data-aos="zoom-in-left" src="./assets/eatery1.png"
+                                        src="./assets/eatery1.png"
                                             alt="Mockup Images of Eatery website"></a>
                                 </div>
                                 <div class="portfolio__contentContainer">
                                     <h4 class="portfolio__title">The Eatery</h4>
-                                    <h6>PSD Conversion, jQuery, Sass, CSS3, HTML5</h6>
+                                    <h6>PSD Conversion, jQuery, BEM, Sass, CSS3, HTML5</h6>
                                     <p class="portfolio__p">Fully responsive PSD Conversion for the Eatery. </p>
                                     <div class="portfolio__buttonContainer">
                                         <a href="https://b-chuang.github.io/billChuangProjectTwo/" target="_blank" class="button__rectangle--keyline">View
@@ -271,24 +289,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="portfolio__container">
-                                <div class="portfolio__imgContainer">
-                                    <a href="https://b-chuang.github.io/gcsCalc/" target="_blank"><img class="work__img" 
-                                         data-aos="zoom-in-right"
-                                            src="./assets/gcs1.png" alt="Mockup Images of Glasgow Coma Scale Calculator"></a>
-                                </div>
-                                <div class="portfolio__contentContainer">
-                                    <h4 class="portfolio__title">Glasgow Coma Scale Calculator</h4>
-                                    <h6>ES6, Javascript, jQuery, Github, CSS3, HTML5</h6>
-                                    <p class="portfolio__p"> A minimalistic Glasgow Coma Scale (GCS) calculator</p>
-                                    <div class="portfolio__buttonContainer">
-                                        <a href="https://b-chuang.github.io/gcsCalc/" target="_blank" class="button__rectangle--keyline">View
-                                            Live</a>
-                                        <a href="https://github.com/b-chuang/gcsCalc" target="_blank" class="button__rectangle--keyline">View
-                                            on Github</a>
-                                    </div>
-                                </div>
-                            </div>
+                            
                             
                         </div>
                     </div>
@@ -475,7 +476,7 @@
                 <!-- CONTACT SECTION END -->
 
                 <!-- FOOTER START -->
-                <footer>©2018 Bill Chuang | Designed and Coded by Bill Chuang </footer>
+                <footer>Designed and Coded by Bill Chuang ©</footer>
                 <!-- FOOTER END -->
             </main>
             <!-- MAIN END -->

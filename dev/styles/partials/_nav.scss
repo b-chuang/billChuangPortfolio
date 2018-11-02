@@ -44,6 +44,12 @@
     }
 }
 
+ul.navList {
+    text-align: center;
+    margin-left:33px;
+    margin-bottom: 20px;
+}
+
 .navFooter__socialLinks {
     @include respond-to("large") {
             display: flex;

@@ -301,6 +301,11 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   .navList__item:hover {
     font-weight: 800; }
 
+ul.navList {
+  text-align: center;
+  margin-left: 33px;
+  margin-bottom: 20px; }
+
 @media (max-width: 940px) {
   .navFooter__socialLinks {
     display: flex;
@@ -822,6 +827,9 @@ p {
   .particleWrapper {
     background-size: 74%;
     background-position: -30% -6%; }
+  ul.navList {
+    text-align: center;
+    margin-left: 0; }
   .about__me {
     width: 95%; }
   .about__me h3 {
@@ -875,4 +883,7 @@ p {
   .sectiontitle__container--work {
     padding-top: 60px; }
   .carousel {
-    margin: 0; } }
+    margin: 0; }
+  ul.navList {
+    text-align: left;
+    margin-left: 0; } }
